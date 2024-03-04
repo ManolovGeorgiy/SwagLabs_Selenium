@@ -3,12 +3,10 @@ package e2e.pages;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-
 public class CheckoutYourInformationPage extends ProductsPage {
     public CheckoutYourInformationPage(WebDriver driver) {
         super(driver);
     }
-
     @FindBy(xpath = "//*[@id='first-name']")
     WebElement firstName;
     @FindBy(xpath = "//*[@id='last-name']")
@@ -41,5 +39,4 @@ public class CheckoutYourInformationPage extends ProductsPage {
     public void clickContinueButton(){
         continueButton.click();
     }
-
 }

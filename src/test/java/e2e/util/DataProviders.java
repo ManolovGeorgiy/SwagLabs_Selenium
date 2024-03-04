@@ -25,7 +25,6 @@ public class DataProviders {
 
         return list.iterator();
     }
-
     @DataProvider
     public Iterator<Object[]>  loginNotValidData(){
 
@@ -38,7 +37,6 @@ public class DataProviders {
 
         return list.iterator();
     }
-
     @DataProvider
     public Iterator<Object[]>  loginData(){
 

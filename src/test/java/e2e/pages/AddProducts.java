@@ -8,15 +8,12 @@ public class AddProducts extends ProductsPage {
     public AddProducts(WebDriver driver) {
         super(driver);
     }
-
     @FindBy(xpath = "//*[@id='item_4_title_link']")
     WebElement addProducts;
-
-    public void waitForOpen(){
+    public void waitForOpen() {
         getWait().forVisibility(addProducts);
     }
-
-    public void setAddProductsClick(){
+    public void setAddProductsClick() {
         addProducts.click();
     }
 }

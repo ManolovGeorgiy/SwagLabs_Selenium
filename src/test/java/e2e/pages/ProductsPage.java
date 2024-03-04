@@ -5,7 +5,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 import java.util.List;
-
 public class ProductsPage extends BasePage{
 
     @FindBy(xpath = "//div[@class='header_label']")
@@ -25,12 +24,9 @@ public class ProductsPage extends BasePage{
 
     @FindBy(xpath = "//*[@id='item_4_title_link']")
     WebElement addProducts;
-
     public ProductsPage(WebDriver driver) {
         super(driver);
     }
-
-
     public void waitForLoading() {
         getWait().forVisibility(header);
         getWait().forVisibility(burgerMenuButton);
@@ -41,16 +37,11 @@ public class ProductsPage extends BasePage{
         getWait().forVisibility(addProducts);
         getWait().forClickable(addProducts);
     }
-
     public void waitForOpen() {
         getWait().forVisibility(addProducts);
         getWait().forClickable(addProducts);
-
     }
-
     public void setAddProducts(){
         addProducts.click();
     }
-
-
 }

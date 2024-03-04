@@ -8,17 +8,14 @@ public class CheckoutOverviewPage extends ProductsPage{
     public CheckoutOverviewPage(WebDriver driver) {
         super(driver);
     }
-
     @FindBy(xpath = "//*[@id='cancel']")
     WebElement cancelButton;
     @FindBy(xpath = "//*[@id='finish']")
     WebElement finishButton;
-
     public void waitForLoading(){
         getWait().forClickable(cancelButton);
         getWait().forClickable(finishButton);
     }
-
     public void clickCancelButton(){
         cancelButton.click();
     }

@@ -10,7 +10,6 @@ public class LoginPage extends BasePage{
     public LoginPage(WebDriver driver) {
         super(driver);
     }
-
     // Describe locator
     @FindBy(xpath = "//*[@name='user-name']")
     WebElement userNameInput;
@@ -20,7 +19,6 @@ public class LoginPage extends BasePage{
 
     @FindBy(xpath = "//*[@id='login-button']")
     WebElement loginButton;
-
     public void waitForLoading(){
         getWait().forVisibility(userNameInput);
         getWait().forVisibility(passwordInput);
@@ -29,7 +27,6 @@ public class LoginPage extends BasePage{
     public void takeLoginPageScreenshot(String actualScreenshotName){
         takeAndCompareScreenshot(actualScreenshotName, null);
     }
-
     //Describe methods
     public void login(String userName, String password){
         userNameInput.sendKeys(userName);

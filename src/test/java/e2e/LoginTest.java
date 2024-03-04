@@ -12,7 +12,6 @@ public class LoginTest extends TestBase {
 
         loginPage = new LoginPage(app.driver);
         loginPage.login(email, password);
-
     }
     @Test
     public void problemUserCanLogin(){
@@ -21,9 +20,6 @@ public class LoginTest extends TestBase {
 
         loginPage = new LoginPage(app.driver);
         loginPage.login(email, password);
-
-
-
     }
     @Test
     public void performanceGlitchUserCanLogin(){
@@ -32,9 +28,6 @@ public class LoginTest extends TestBase {
 
         loginPage = new LoginPage(app.driver);
         loginPage.login(email, password);
-
-
-
     }
     @Test
     public void errorUserCanLogin(){
@@ -43,9 +36,6 @@ public class LoginTest extends TestBase {
 
         loginPage = new LoginPage(app.driver);
         loginPage.login(email, password);
-
-
-
     }
     @Test
     public void visualUserCanLogin(){
@@ -54,9 +44,6 @@ public class LoginTest extends TestBase {
 
         loginPage = new LoginPage(app.driver);
         loginPage.login(email, password);
-
-
-
     }
     @Test(dataProvider = "loginNotValidData",dataProviderClass = DataProviders.class)
     public void userCannotLoginWithInvalidPassword(String email,String password, String caseName){
@@ -67,12 +54,10 @@ public class LoginTest extends TestBase {
         loginPage.waitForLoading();
 
         loginPage.takeLoginPageScreenshot( caseName + "negativeLoginCase");
-
-
     }
-
     @Test
     public void userCannotLoginWithInvalidLogin(){
+
         String email = "rrr";
         String password = "secret_sauce";
 

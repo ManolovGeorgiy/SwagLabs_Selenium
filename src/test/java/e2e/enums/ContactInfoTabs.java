@@ -8,8 +8,7 @@ public enum ContactInfoTabs {
     CARD("3"),
     YOUR("4");
     public final String value;
-
-    ContactInfoTabs(String value){
+    ContactInfoTabs(String value) {
         this.value = value;
     }
 }
