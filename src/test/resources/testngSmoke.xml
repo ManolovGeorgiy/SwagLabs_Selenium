@@ -9,6 +9,7 @@
                     <include name="problemUserCanLogin"/>
                 </methods>
             </class>
+            <class name="e2e.UserCanWorkWithProductsTest"></class>
 
         </classes>
     </test>
